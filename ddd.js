@@ -28,6 +28,8 @@ var Entity = (function () {
     return Entity;
 })();
 
+var entity = new Entity(numberIdentify);
+
 var Person = (function (_super) {
     __extends(Person, _super);
     function Person(identify) {
@@ -72,4 +74,3 @@ var PersonRepository = (function (_super) {
 
 var personRepository2 = new PersonRepository();
 repository.store(personA);
-repository.store(e2);

@@ -27,6 +27,8 @@ class Entity<T extends Identify> {
     }
 }
 
+var entity = new Entity<NumberIdentify>(numberIdentify);
+
 class Person extends Entity<NumberIdentify> {
 
     constructor(public identify: NumberIdentify) {
@@ -64,4 +66,5 @@ class PersonRepository extends Repository<Person, NumberIdentify> {
 
 var personRepository2 = new PersonRepository();
 repository.store(personA);
-repository.store(e2);
+//repository.store(e2);
+
